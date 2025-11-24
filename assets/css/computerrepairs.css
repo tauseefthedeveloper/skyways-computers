@@ -1,0 +1,154 @@
+/* Hero */
+.repair-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(65%);
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 15px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: #0077ff;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #0057cc;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Showcase */
+.showcase {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Why Us */
+.why-us{
+    padding: 10px;
+}
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 2.2;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* CTA */
+.cta {
+  background: #0077ff;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.cta-btn {
+  background: white;
+  color: #0077ff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-img {
+    height: 40vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
