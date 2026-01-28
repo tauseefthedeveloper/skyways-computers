@@ -1136,6 +1136,15 @@ footer::before {
   position: relative;
   z-index: 1;
 }
+ .footer-wrap .footer-col div,p{
+    font-size: 15px;
+  }
+@media screen and (max-width:1199px) {
+  .footer-wrap .footer-col div,p{
+    padding: 0px 15px;
+    font-size: 14px;
+  }
+}
 
 .footer-grid {
   display: grid;
@@ -1157,7 +1166,7 @@ footer::before {
 .footer-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px
+  gap: 0px
 }
 
 .footer-links a {
