@@ -171,19 +171,19 @@ fetch(scriptURL,{
 method:"POST",
 body:JSON.stringify(data)
 })
-.then(res=>res.json())
-.then(data=>{
+.then(res => res.text())
+.then(data => {
+    console.log(data);
 
-alert("Your data has been submitted successfully. Our team will contact you shortly.");
+    alert("Your data has been submitted successfully. Our team will contact you shortly.");
 
-form.reset();
+    form.reset();
 
-  gtag('event', 'conversion', {
+    gtag('event', 'conversion', {
       'send_to': 'AW-18265871152/0jkMCLngucccELCm7IVE',
       'value': 1.0,
       'currency': 'INR'
-  });
-
+    });
 })
 .catch(err=>{
 alert("Something went wrong.");
