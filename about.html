@@ -2,190 +2,33 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" type="image/png" href="assets/images/HomePage Brandlogo/logo.png">
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18265871152"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-18265871152');
-</script>
+
   <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/images/HomePage Brandlogo/logo.png">
+  
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact Us — SKYWAYS COMPUTER</title>
-      <link rel="icon" type="image/png" href="home/logo.png">
-      <meta name="description" content="Contact ComfySeat Chair in Sakinaka, Mumbai.">
-      
-      <style>
-        /* एनिमेटेड हेडिंग और इंट्रो टेक्स्ट */
-        .contact-header-container {
-          text-align: center;
-          margin-bottom: 40px;
-          animation: fadeInDown 0.8s ease-out;
-        }
-        
-        .animated-heading {
-          font-family: 'Segoe UI', Roboto, sans-serif;
-          font-size: 2.8rem;
-          font-weight: 800;
-          background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin-bottom: 10px;
-          display: inline-block;
-        }
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self'; frame-src https://www.google.com https://www.google.com/maps/; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>About Us — SKYWAYS COMPUTERS</title>
+  <meta name="description" content="About ComfySeat Chair: ergonomic seating crafted for comfort.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-        .contact-subtext {
-          color: #64748b;
-          font-size: 1.1rem;
-          max-width: 600px;
-          margin: 0 auto;
-        }
 
-        /* मुख्य लेआउट */
-        .contact {
-          display: grid;
-          grid-template-columns: 1.2fr 1fr;
-          gap: 35px;
-          align-items: stretch;
-          animation: fadeInUp 0.9s ease-out;
-        }
 
-        /* प्रीमियम फॉर्म और मैप कार्ड डिज़ाइन */
-        .contact .card {
-          background: #ffffff;
-          border-radius: 16px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-          border: 1px solid #e2e8f0;
-          overflow: hidden;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .contact .card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-        }
-
-        .contact .form {
-          padding: 35px;
-        }
-
-        /* फॉर्म ग्रिड और इनपुट फील्ड्स */
-        .contact .grid.cols-2 {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 22px;
-          margin-bottom: 22px;
-        }
-
-        .form-group {
-          position: relative;
-        }
-
-        .contact input[type="text"],
-        .contact input[type="tel"],
-        .contact select,
-        .contact textarea {
-          width: 100%;
-          padding: 14px 16px;
-          border: 2px solid #cbd5e1;
-          border-radius: 10px;
-          font-size: 15px;
-          color: #334155;
-          background-color: #fff;
-          outline: none;
-          transition: all 0.3s ease;
-        }
-
-        .contact input:focus,
-        .contact select:focus,
-        .contact textarea:focus {
-          border-color: #0284c7;
-          box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
-        }
-
-        /* वैलिडेशन एरर मैसेज स्टाइल */
-        .contact input.invalid,
-        .contact select.invalid,
-        .contact textarea.invalid {
-          border-color: #ef4444 !important;
-          background-color: #fef2f2;
-        }
-
-        .error-text {
-          color: #ef4444;
-          font-size: 12px;
-          margin-top: 5px;
-          display: none;
-          font-weight: 500;
-        }
-
-        /* प्रीमियम बटन */
-        .contact .btn-primary {
-          width: 100%;
-          padding: 15px;
-          font-size: 16px;
-          font-weight: 600;
-          background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-          color: white;
-          border: none;
-          border-radius: 10px;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
-        }
-
-        .contact .btn-primary:hover {
-          background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
-          box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
-        }
-
-        /* मैप कंटेनर फिक्स */
-        .contact .map {
-          min-height: 450px;
-        }
-
-        /* एनिमेशन की डेफिनिशन */
-        @keyframes fadeInDown {
-          from { opacity: 0; transform: translateY(-20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* रिस्पॉन्सिव लेआउट मोबाइल के लिए */
-        @media (max-width: 768px) {
-          .contact {
-            grid-template-columns: 1fr;
-          }
-          .contact .grid.cols-2 {
-            grid-template-columns: 1fr;
-            gap: 15px;
-          }
-          .animated-heading {
-            font-size: 2.2rem;
-          }
-          .contact .map {
-            min-height: 300px;
-          }
-        }
-      </style>
 </head>
 
 <body>
   <div id="preloader">
     <div class="spinner"></div>
   </div>
+
   <header class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-wrap">
       <div class="brand" style="margin-left:6px">
         <div class="brand-badge" aria-label="ComfySeat Logo">SWC</div>
-        <div class="brand-name">SKYWAYS COMPUTER <br><span
-            style="color:black;font-size:12px;font-weight:400;font-style: italic;">The name you can trust.</span> </div>
+        <div class="brand-name">SKYWAYS COMPUTERS <br><span class="slogan" style="color:black;font-size:12px;font-weight:400;font-style: italic;">The name you can trust.</span></div>
       </div>
       <nav class="nav-links" aria-label="Primary">
         <a href="index.html#home">Home</a>
@@ -215,7 +58,7 @@
             <ul class="mobile-dropdown-menu">
               <li><a href="refurbished.html" class="mobile-nav-link">Refurbished Laptop</a></li>
               <li><a href="laptoprepairs.html" class="mobile-nav-link">Laptop Repairs</a></li>
-              <li><a href="computerrepairs.html" class="mobile-nav-link">Computer Repairs</a></li>
+              <li><a href="computerrepairs.html" class="mobile-nav-link">Computers Repairs</a></li>
             </ul>
           </details>
         </li>
@@ -225,97 +68,81 @@
   </header>
 
   <main class="section">
-    <div class="contact-header-container">
-      <h1 class="animated-heading">Get In Touch</h1>
-      <p class="contact-subtext">Have a question or looking for bulk corporate deals? Fill out the form below and our technical support team will assist you shortly.</p>
-    </div>
-    
-    <div class="contact">
-      <form class="form card" id="contactForm" novalidate>
-        <div class="card-body">
-          <div class="grid cols-2">
-            
-            <div class="form-group">
-              <input type="text" name="name" id="name" placeholder="Full Name" required>
-              <div class="error-text" id="nameError">Please enter your name (letters only).</div>
-            </div>
-
-            <div class="form-group">
-              <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
-              <div class="error-text" id="phoneError">Enter a valid 10-digit phone number.</div>
-            </div>
-
-            <div class="form-group">
-              <input type="text" name="city" id="city" placeholder="City" required>
-              <div class="error-text" id="cityError">City field cannot be empty.</div>
-            </div>
-
-            <div class="form-group">
-              <select name="state" id="state" required>
-                <option value="" disabled selected>Select State / UT</option>
-                <optgroup label="States">
-                  <option value="Andhra Pradesh">Andhra Pradesh</option>
-                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                  <option value="Assam">Assam</option>
-                  <option value="Bihar">Bihar</option>
-                  <option value="Chhattisgarh">Chhattisgarh</option>
-                  <option value="Goa">Goa</option>
-                  <option value="Gujarat">Gujarat</option>
-                  <option value="Haryana">Haryana</option>
-                  <option value="Himachal Pradesh">Himachal Pradesh</option>
-                  <option value="Jharkhand">Jharkhand</option>
-                  <option value="Karnataka">Karnataka</option>
-                  <option value="Kerala">Kerala</option>
-                  <option value="Madhya Pradesh">Madhya Pradesh</option>
-                  <option value="Maharashtra">Maharashtra</option>
-                  <option value="Manipur">Manipur</option>
-                  <option value="Meghalaya">Meghalaya</option>
-                  <option value="Mizoram">Mizoram</option>
-                  <option value="Nagaland">Nagaland</option>
-                  <option value="Odisha">Odisha</option>
-                  <option value="Punjab">Punjab</option>
-                  <option value="Rajasthan">Rajasthan</option>
-                  <option value="Sikkim">Sikkim</option>
-                  <option value="Tamil Nadu">Tamil Nadu</option>
-                  <option value="Telangana">Telangana</option>
-                  <option value="Tripura">Tripura</option>
-                  <option value="Uttar Pradesh">Uttar Pradesh</option>
-                  <option value="Uttarakhand">Uttarakhand</option>
-                  <option value="West Bengal">West Bengal</option>
-                </optgroup>
-                <optgroup label="Union Territories">
-                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                  <option value="Chandigarh">Chandigarh</option>
-                  <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli & Daman and Diu</option>
-                  <option value="Delhi">Delhi (NCT)</option>
-                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                  <option value="Ladakh">Ladakh</option>
-                  <option value="Lakshadweep">Lakshadweep</option>
-                  <option value="Puducherry">Puducherry</option>
-                </optgroup>
-              </select>
-              <div class="error-text" id="stateError">Please select your state from the list.</div>
-            </div>
-
-          </div>
-          
-          <div class="form-group" style="margin-bottom: 22px;">
-            <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
-            <div class="error-text" id="messageError">Please enter a message (min 5 characters).</div>
-          </div>
-          
-          <button class="btn btn-primary" type="submit">Send Message</button>
+    <h2 style="font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 20px;">
+        About Us – <span style="color:#007bff;">SKYWAYS COMPUTERS</span>
+    </h2>
+    <div class="about">
+      <div class="about-content">
+        <p style="color:#334155;line-height:1.7"><b>Welcome to SKYWAYS COMPUTERS</b>, your trusted destination for
+          technology solutions, IT services, and premium computer products. Founded with a vision to make technology
+          simple, reliable, and accessible, we have grown into one of the most dependable IT service providers in the
+          region.</p>
+        <p style="color:#334155;line-height:1.7">Every curve, stitch, and material is considered—backed by rigorous
+          testing and thoughtful craftsmanship.</p>
+        <button class="btn btn-primary" id="learnMoreBtn" style="margin-top:10px">Learn More</button>
+        <div class="more" id="moreText">
+          <p>For years, SKYWAYS COMPUTER has been dedicated to helping individuals, businesses, and organizations
+            unlock the power of technology through best-in-class products, expert guidance, and unmatched customer
+            support. Whether you need a high-performance laptop, customized desktop, networking solutions, or repair &
+            maintenance services, our team is here to help.</p>
         </div>
-      </form>
-
-      <div class="map card">
-        <iframe title="Sakinaka, Mumbai"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.67635001517823!2d72.8873901441693!3d19.094717402095288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87ad7ee8f71%3A0xac6e13ea7d63b809!2sS.N%20Enterprises!5e1!3m2!1sen!2sin!4v1763731982985!5m2!1sen!2sin"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/AboutUS/About.jpg" alt="Our studio with chairs">
       </div>
     </div>
   </main>
+  <section id="about" style="padding: 60px 20px; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1100px; margin: auto;">
+      <h3 style="font-size: 28px; margin-top: 30px;">What We Do</h3>
+      <ul style="font-size: 18px; line-height: 1.7; margin-left: 20px;">
+        <li>Sales of Laptops, Desktops & IT Accessories</li>
+        <li>Computer & Laptop Repair Services by certified experts</li>
+        <li>IT Infrastructure & Networking setup for offices and startups</li>
+        <li>Buyback & Refurbished high-performance systems</li>
+        <li>Software, Licensing & Technical Support</li>
+      </ul>
+
+      <h3 style="font-size: 28px; margin-top: 30px;">Our Commitment</h3>
+      <p style="font-size: 18px; line-height: 1.7;">
+        At SKYWAYS COMPUTER, customer satisfaction is our top priority. We believe in transparency, trust,
+        and long-term relationships. Our goal is to deliver high-quality products and solutions that help you grow.
+      </p>
+
+      <h3 style="font-size: 28px; margin-top: 30px;">Why Choose Us</h3>
+      <ul style="font-size: 18px; line-height: 1.7; margin-left: 20px;">
+        <li>Experienced & Certified Professionals</li>
+        <li>Friendly Customer Support</li>
+        <li>Genuine Products at Competitive Prices</li>
+        <li>Quick Service & Fast Delivery</li>
+        <li>Secure & Reliable Solutions</li>
+      </ul>
+
+      <h3 style="font-size: 28px; margin-top: 30px;">Our Mission</h3>
+      <p style="font-size: 18px; line-height: 1.7;">
+        To empower individuals and businesses with innovative technology solutions that improve efficiency and
+        productivity.
+      </p>
+
+      <h3 style="font-size: 28px; margin-top: 30px;">Our Vision</h3>
+      <p style="font-size: 18px; line-height: 1.7; margin-bottom: 40px;">
+        To become the most trusted and leading IT solutions provider recognized for quality, commitment, and excellence.
+      </p>
+
+      <div style="margin-top: 50px;">
+        <h3 style="font-size: 28px;">Get in Touch</h3>
+        <p style="font-size: 18px; line-height: 1.7;">
+          📍 <strong>Address:</strong> Shop No. 4, 90 Feet Road, Mohili Village, Opp. Yari D'souza Nagar, Sakinak, Mumbai - 72 <br>
+          📞 <strong>Phone:</strong> +91 7045707520 <br>
+          📧 <strong>Email:</strong> skywayscomputer@gmail.com <br>
+        </p>
+      </div>
+
+      <h3 style="text-align:center; font-size:20px; margin-top:45px;">
+        <strong>SKYWAYS COMPUTERS – The name you can trust.</strong>
+      </h3>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-wrap">
@@ -350,96 +177,29 @@
 
         <div class="footer-col">
           <h4>Contact Info</h4>
-          <p>SKYWAYS COMPUTER Pvt Ltd<br>Shop No. 4, 90 Feet Road, Mohili Village, Opp. Yari D'souza Nagar, Sakinaka,
+          <p>SKYWAYS COMPUTERS Pvt Ltd<br>Shop No. 4, 90 Feet Road, Mohili Village, Opp. Yari D'souza Nagar, Sakinaka,
             Mumbai 400072</p>
-          <p>Email: skywayscomputer@gmail.com<br>Phone: +91-7045707520</p>
+          <p>Email: skywayscomputer@gmail.com<br>Phone: +91-7045707520 , 8591918552</p>
         </div>
 
       </div>
 
       <div class="copyright">
-        © <span id="year"></span> SKYWAYS COMPUTER. All rights reserved.
+        © <span id="year"></span> SKYWAYS COMPUTERS. All rights reserved.
       </div>
     </div>
   </footer>
+
 
   <button id="backToTop" class="icon-btn" aria-label="Back to top">↑</button>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/main.js"></script>
-
+  <script>document.getElementById('learnMoreBtn').addEventListener('click', () => { const m = document.getElementById('moreText'); m.style.display = m.style.display === 'block' ? 'none' : 'block'; });</script>
 </body>
 
-<script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbxNJYdM7JDkLT1ZawnQkvdOzCM8d0KQB_sB7PkzgEUf7nTpZM8ydUQDJIPBRbUdnpYW/exec";
-const form = document.getElementById("contactForm");
-
-// वैलिडेशन ऑब्जेक्ट लॉजिक रूल 
-const fields = {
-  name: { el: document.getElementById('name'), error: document.getElementById('nameError'), validate: val => /^[a-zA-Z\s]{3,50}$/.test(val.trim()) },
-  phone: { el: document.getElementById('phone'), error: document.getElementById('phoneError'), validate: val => /^[6-9]\d{9}$/.test(val.trim()) },
-  city: { el: document.getElementById('city'), error: document.getElementById('cityError'), validate: val => val.trim().length > 1 },
-  state: { el: document.getElementById('state'), error: document.getElementById('stateError'), validate: val => val !== "" },
-  message: { el: document.getElementById('message'), error: document.getElementById('messageError'), validate: val => val.trim().length >= 5 }
-};
-
-// यूजर टाइप करे तो लाल बॉर्डर हट जाये
-Object.keys(fields).forEach(key => {
-  fields[key].el.addEventListener('input', () => {
-    fields[key].el.classList.remove('invalid');
-    fields[key].error.style.display = 'none';
-  });
-});
-
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  let isFormValid = true;
-
-  // सभी फील्ड्स को वैलिडेट करना
-  Object.keys(fields).forEach(key => {
-    const target = fields[key];
-    if (!target.validate(target.el.value)) {
-      target.el.classList.add('invalid');
-      target.error.style.display = 'block';
-      isFormValid = false;
-    } else {
-      target.el.classList.remove('invalid');
-      target.error.style.display = 'none';
-    }
-  });
-
-  if (!isFormValid) return false;
-
-  const data={
-    name:form.name.value,
-    phone:form.phone.value,
-    city:form.city.value,
-    state:form.state.value,
-    message:form.message.value
-  };
-
-  fetch(scriptURL,{
-    method:"POST",
-    body:JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(data => {
-      console.log(data);
-      alert("Your data has been submitted successfully. Our team will contact you shortly.");
-      form.reset();
-
-      if(typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18265871152/0jkMCLngucccELCm7IVE',
-          'value': 1.0,
-          'currency': 'INR'
-        });
-      }
-  })
-  .catch(err=>{
-    alert("Something went wrong.");
-    console.log(err);
-  });
-});
-</script>
 </html>
+
+
+
+
